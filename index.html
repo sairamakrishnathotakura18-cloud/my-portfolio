@@ -1,0 +1,809 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sairamakrisna | Full-Stack Software Engineer Portfolio</title>
+  <!-- App Icons & Favicon -->
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+  <link rel="apple-touch-icon" href="images/favicon.svg">
+  <meta name="theme-color" content="#0b0f19">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.net/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ==========================================
+       1. NAVIGATION BAR
+  =========================================== -->
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#home">
+        <div class="brand-icon">
+          <i class="fa-solid fa-code"></i>
+        </div>
+        <span>SRK<span class="text-gradient">.The Developer</span></span>
+      </a>
+
+      <div class="d-flex align-items-center order-lg-3 gap-2">
+        <button class="theme-toggle-btn" id="themeToggleBtn" aria-label="Toggle dark/light mode">
+          <i class="fa-solid fa-sun"></i>
+        </button>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+
+      <div class="collapse navbar-collapse justify-content-center order-lg-2" id="navbarNav">
+        <ul class="navbar-nav gap-lg-1 py-3 py-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#skills">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#projects">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ==========================================
+       2. HOME / HERO SECTION
+  =========================================== -->
+  <section id="home" class="hero-section">
+    <div class="hero-bg-shapes">
+      <div class="shape-blob shape-1"></div>
+      <div class="shape-blob shape-2"></div>
+      <div class="shape-blob shape-3"></div>
+    </div>
+
+    <div class="container">
+      <div class="row align-items-center gy-5">
+        <!-- Hero Text Content -->
+        <div class="col-lg-7 hero-content fade-in-up">
+          <div class="hero-badge">
+            <span class="status-dot"></span>
+            <span>Available for Full-Time & Freelance Work</span>
+          </div>
+          
+          <h1 class="hero-title">
+            Hi, I'm <span class="text-gradient">SaiRamaKrishna</span><br>
+            <span style="font-size: 0.7em; font-weight: 700;">I build <span id="typedText" class="typed-wrapper"></span></span>
+          </h1>
+
+          <p class="hero-desc">
+            Full-Stack Developer | Python Developer | Data Analyst specializing in building modern web applications, developing scalable backend solutions, analyzing data, and creating responsive, user-friendly interfaces.
+
+          <div class="hero-cta">
+            <a href="#projects" class="btn-primary-custom">
+              <i class="fa-solid fa-rocket"></i> View Projects
+            </a>
+            <a href="#contact" class="btn-outline-custom">
+              <i class="fa-solid fa-paper-plane"></i> Contact Me
+            </a>
+            <button class="btn-outline-custom" data-bs-toggle="modal" data-bs-target="#resumeModal">
+              <i class="fa-solid fa-file-invoice"></i> Preview Resume
+            </button>
+          </div>
+
+          <div class="d-flex align-items-center gap-3">
+            <span class="text-muted small fw-bold text-uppercase" style="letter-spacing: 1px;">Connect with me:</span>
+            <div class="social-links">
+              <a href="https://www.linkedin.com/in/sai-siva-mani-sri-rama-krishna-thotakura-a32951383?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" class="social-icon" aria-label="LinkedIn">
+                <svg class="social-svg" viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9v8.37H9.25V10.9H6.46M7.86 6.63a1.64 1.64 0 1 0 0 3.28 1.64 1.64 0 0 0 0-3.28z"/></svg>
+                <i class="fa-brands fa-linkedin-in d-none"></i>
+              </a>
+              <a href="https://github.com/sairamakrishnathotakura18-cloud" target="_blank" class="social-icon" aria-label="GitHub">
+                <svg class="social-svg" viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.1-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2z"/></svg>
+                <i class="fa-brands fa-github d-none"></i>
+              </a>
+              <a href="https://www.instagram.com/offx__sai_.18?igsh=MWFoczk1NmV2dGFjNA==" target="_blank" class="social-icon" aria-label="Instagram">
+                <svg class="social-svg" viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                <i class="fa-brands fa-instagram d-none"></i>
+              </a>
+              <a href="mailto:sairamakrishnathotakura18@gmail.com" class="social-icon" aria-label="Email">
+                <svg class="social-svg" viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+                <i class="fa-solid fa-envelope d-none"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Profile Visual -->
+        <div class="col-lg-5 text-center fade-in-up">
+          <div class="hero-image-wrapper">
+            <div class="profile-ring">
+              <div class="profile-img-container">
+                <img src="images/sai.jpg" alt="Sai - Software Engineer">
+              </div>
+            </div>
+
+            <!-- Floating Badge Top Left -->
+            <div class="floating-stat-badge badge-top-left">
+              <div class="stat-icon">
+                <i class="fa-solid fa-award"></i>
+              </div>
+              <div class="text-start">
+                <div class="stat-number">2nd year</div>
+                <div class="stat-label">Student</div>
+              </div>
+            </div>
+
+            <!-- Floating Badge Bottom Right -->
+            <div class="floating-stat-badge badge-bottom-right">
+              <div class="stat-icon">
+                <i class="fa-solid fa-laptop-code"></i>
+              </div>
+              <div class="text-start">
+                <div class="stat-number">2+</div>
+                <div class="stat-label">Projects Built</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       3. ABOUT SECTION
+  =========================================== -->
+  <section id="about" class="section-padding">
+    <div class="container">
+      <div class="text-center">
+        <span class="section-subtitle">Discover My Story</span>
+        <h2 class="section-title">About <span class="text-gradient">Me</span></h2>
+        <p class="section-desc">Driven by a passion for solving complex problems and turning creative ideas into robust, production-ready software solutions.</p>
+      </div>
+
+      <div class="row gy-4 mt-2">
+        <!-- Left: Bio & Objectives Card -->
+        <div class="col-lg-7 fade-in-up">
+          <div class="bg-glass about-card">
+            <h3 class="h4 mb-3"><i class="fa-solid fa-user-astronaut text-gradient me-2"></i> Professional Profile</h3>
+            <p>
+             I am a dedicated Full-Stack Developer, Python Developer, and Data Analyst** with a strong foundation in computer science, modern web technologies, and data-driven problem solving. I specialize in building responsive, scalable, and user-friendly web applications, developing efficient Python solutions, and transforming raw data into meaningful insights through data analysis.
+
+            </p>
+            <p>
+             With experience across frontend technologies** (HTML5, CSS3, JavaScript, Bootstrap 5), **backend development** (Python, Java, SQL), and **data analysis** using Python, I focus on building scalable, maintainable, and efficient applications while following industry best practices. I am passionate about creating seamless user experiences and leveraging data to solve real-world problems.
+
+
+            <h4 class="h5 mt-4 mb-2"><i class="fa-solid fa-bullseye text-gradient me-2"></i> Career Objective</h4>
+            <p class="text-muted">
+              To leverage my technical skills and problem-solving abilities in a dynamic engineering team where I can contribute to impactful software products, continue mastering cloud architecture, and build high-grade applications.
+            </p>
+
+            <!-- Quick Info Grid -->
+            <div class="info-grid">
+              <div class="info-item">
+                <h6>Location</h6>
+                <p>KAKINADA,AP,</p>
+              </div>
+              <div class="info-item">
+                <h6>B-TECH</h6>
+                <p>CSE-AIML</p>
+              </div>
+              <div class="info-item">
+                <h6>STUDENT AT</h6>
+                <p>ITM UNIVERSITY</p>
+              </div>
+              <div class="info-item">
+                <h6>Status</h6>
+                <p class="text-success">Available</p>
+              </div>
+            </div>
+
+            <div class="d-flex flex-wrap gap-3 mt-4">
+              <button onclick="triggerResumeDownload()" class="btn-primary-custom">
+                <i class="fa-solid fa-download"></i> Download Resume
+              </button>
+              <button class="btn-outline-custom" data-bs-toggle="modal" data-bs-target="#resumeModal">
+                <i class="fa-solid fa-eye"></i> View Online Resume
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Education & Experience Timeline Card -->
+        <div class="col-lg-5 fade-in-up">
+          <div class="bg-glass about-card">
+            <h3 class="h4 mb-4"><i class="fa-solid fa-graduation-cap text-gradient me-2"></i> Education & Milestones</h3>
+
+            <div class="timeline-item">
+              <div class="timeline-year">2025 - PRESENT</div>
+              <div class="timeline-title">Full-Stack</div>
+              <div class="timeline-institution"><i class="fa-solid fa-building me-1"></i> Tech Innovations Lab</div>
+              <p class="small text-muted mb-0">Spearheading cloud dashboard applications, leading frontend performance optimizations, and integrating AI API pipelines.</p>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-year">2025 - 2029</div>
+              <div class="timeline-title">Computer Science & Engineering</div>
+              <div class="timeline-institution"><i class="fa-solid fa-university me-1"></i> California State University</div>
+              <p class="small text-muted mb-0">Currently pursuing B.Tech in Artificial Intelligence & Machine Learning at ITM University, Gwalior. Focused on Full-Stack Development, Python, Data Analysis.
+
+</p>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-year">2025</div>
+              <div class="timeline-title">Full-Stack Web Certification</div>
+              <div class="timeline-institution"><i class="fa-solid fa-certificate me-1"></i> Developer Institute</div>
+              <p class="small text-muted mb-0">Mastered modern UI design, Bootstrap 5 grid systems, asynchronous JavaScript, RESTful APIs, and SQL relational databases.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       4. SKILLS SECTION
+  =========================================== -->
+  <section id="skills" class="section-padding" style="background: var(--bg-secondary);">
+    <div class="container">
+      <div class="text-center">
+        <span class="section-subtitle">Technical Competence</span>
+        <h2 class="section-title">My <span class="text-gradient">Skills</span></h2>
+        <p class="section-desc">Comprehensive list of core programming languages, frameworks, and web development technologies I utilize daily.</p>
+      </div>
+
+      <!-- Filter Buttons -->
+      <div class="filter-btn-group fade-in-up">
+        <button class="filter-btn active" data-filter="all">All Skills</button>
+        <button class="filter-btn" data-filter="frontend">Frontend</button>
+        <button class="filter-btn" data-filter="backend">Backend & Languages</button>
+        <button class="filter-btn" data-filter="tools">Database & Tools</button>
+      </div>
+
+      <div class="row g-4 mt-1">
+        <!-- 1. HTML5 -->
+        <div class="col-md-6 col-lg-4 project-item fade-in-up" data-category="frontend">
+          <div class="bg-glass skill-card">
+            <div class="skill-header">
+              <div class="d-flex align-items-center gap-3">
+                <div class="skill-icon-wrapper">
+                  <i class="fa-brands fa-html5"></i>
+                </div>
+                <div>
+                  <div class="skill-name">HTML5</div>
+                  <span class="small text-muted">Web & Accessibility</span>
+                </div>
+              </div>
+              <span class="skill-percentage">95%</span>
+            </div>
+            <div class="progress-bar-container">
+              <div class="progress-bar-fill" data-percentage="95%"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2. CSS3 -->
+        <div class="col-md-6 col-lg-4 project-item fade-in-up" data-category="frontend">
+          <div class="bg-glass skill-card">
+            <div class="skill-header">
+              <div class="d-flex align-items-center gap-3">
+                <div class="skill-icon-wrapper">
+                  <i class="fa-brands fa-css3-alt"></i>
+                </div>
+                <div>
+                  <div class="skill-name">CSS3 / Animations</div>
+                  <span class="small text-muted">Flexbox, Grid & Keyframes</span>
+                </div>
+              </div>
+              <span class="skill-percentage">90%</span>
+            </div>
+            <div class="progress-bar-container">
+              <div class="progress-bar-fill" data-percentage="90%"></div>
+            </div>
+          </div>
+        </div>
+
+        
+
+        <!-- 3. JavaScript -->
+        <div class="col-md-6 col-lg-4 project-item fade-in-up" data-category="frontend">
+          <div class="bg-glass skill-card">
+            <div class="skill-header">
+              <div class="d-flex align-items-center gap-3">
+                <div class="skill-icon-wrapper">
+                  <i class="fa-brands fa-square-js"></i>
+                </div>
+                <div>
+                  <div class="skill-name">JavaScript (ES6+)</div>
+                  <span class="small text-muted">DOM Manip, Async/Await & Logic</span>
+                </div>
+              </div>
+              <span class="skill-percentage">90%</span>
+            </div>
+            <div class="progress-bar-container">
+              <div class="progress-bar-fill" data-percentage="90%"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 5. Python -->
+        <div class="col-md-6 col-lg-4 project-item fade-in-up" data-category="backend">
+          <div class="bg-glass skill-card">
+            <div class="skill-header">
+              <div class="d-flex align-items-center gap-3">
+                <div class="skill-icon-wrapper">
+                  <i class="fa-brands fa-python"></i>
+                </div>
+                <div>
+                  <div class="skill-name">Python</div>
+                  <span class="small text-muted">Backends, Automation & Scripting</span>
+                </div>
+              </div>
+              <span class="skill-percentage">85%</span>
+            </div>
+            <div class="progress-bar-container">
+              <div class="progress-bar-fill" data-percentage="85%"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 6. Java -->
+        <div class="col-md-6 col-lg-4 project-item fade-in-up" data-category="backend">
+          <div class="bg-glass skill-card">
+            <div class="skill-header">
+              <div class="d-flex align-items-center gap-3">
+                <div class="skill-icon-wrapper">
+                  <i class="fa-brands fa-java"></i>
+                </div>
+                <div>
+                  <div class="skill-name">Java</div>
+                  <span class="small text-muted">OOP Architecture & Data Structures</span>
+                </div>
+              </div>
+              <span class="skill-percentage">80%</span>
+            </div>
+            <div class="progress-bar-container">
+              <div class="progress-bar-fill" data-percentage="80%"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 7. C++ -->
+        <div class="col-md-6 col-lg-4 project-item fade-in-up" data-category="backend">
+          <div class="bg-glass skill-card">
+            <div class="skill-header">
+              <div class="d-flex align-items-center gap-3">
+                <div class="skill-icon-wrapper">
+                  <i class="fa-solid fa-code"></i>
+                </div>
+                <div>
+                  <div class="skill-name">C++</div>
+                  <span class="small text-muted">Oops& Systems Optimization</span>
+                </div>
+              </div>
+              <span class="skill-percentage">90%</span>
+            </div>
+            <div class="progress-bar-container">
+              <div class="progress-bar-fill" data-percentage="75%"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 8. SQL -->
+        <div class="col-md-6 col-lg-4 project-item fade-in-up" data-category="tools">
+          <div class="bg-glass skill-card">
+            <div class="skill-header">
+              <div class="d-flex align-items-center gap-3">
+                <div class="skill-icon-wrapper">
+                  <i class="fa-solid fa-database"></i>
+                </div>
+                <div>
+                  <div class="skill-name">SQL & Databases</div>
+                  <span class="small text-muted">Relational Schema & Query Tuning</span>
+                </div>
+              </div>
+              <span class="skill-percentage">85%</span>
+            </div>
+            <div class="progress-bar-container">
+              <div class="progress-bar-fill" data-percentage="85%"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       5. PROJECTS SECTION
+  =========================================== -->
+  <section id="projects" class="section-padding">
+    <div class="container">
+      <div class="text-center">
+        <span class="section-subtitle">Portfolio Showcase</span>
+        <h2 class="section-title">Featured <span class="text-gradient">Projects</span></h2>
+        <p class="section-desc">A selection of my recent engineering projects showcasing real-world application building, API design, and UI craftsmanship.</p>
+      </div>
+
+      <div class="row g-4 mt-2">
+        <!-- Project 1 -->
+        <div class="col-lg-6 fade-in-up">
+          <div class="bg-glass project-card">
+            <div class="project-img-wrapper">
+              <img src="images/project1.png" alt="Aether AI Analytics Dashboard">
+              <span class="project-badge">AI & Analytics</span>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Aether AI Analytics Dashboard</h3>
+              <p class="project-desc">
+                An intelligent dashboard platform featuring real-time inference monitoring, customizable telemetry widgets, live charts, and code visualizer.
+              </p>
+              <div class="tech-tags">
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">Bootstrap 5</span>
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">REST API</span>
+                <span class="tech-tag">Chart.js</span>
+              </div>
+              <div class="project-actions">
+                <button onclick="openProjectModal('Aether AI Analytics Dashboard', 'images/project1.png', 'AI & Analytics', 'An intelligent dashboard platform featuring real-time inference monitoring, customizable telemetry widgets, live charts, and code visualizer.', ['JavaScript', 'Bootstrap 5', 'Python', 'REST API', 'Chart.js'], '#', 'https://github.com')" class="btn btn-primary-custom">
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
+                </button>
+                <a href="https://github.com" target="_blank" class="btn btn-outline-custom">
+                  <i class="fa-brands fa-github"></i> GitHub Repo
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="col-lg-6 fade-in-up">
+          <div class="bg-glass project-card">
+            <div class="project-img-wrapper">
+              <img src="images/project2.png" alt="Modernware E-Commerce Platform">
+              <span class="project-badge">E-Commerce</span>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Modernware E-Commerce Platform</h3>
+              <p class="project-desc">
+                A sleek e-commerce shopping experience with instant category filters, dynamic cart drawer, responsive product cards, and dark/light UI styling.
+              </p>
+              <div class="tech-tags">
+                <span class="tech-tag">HTML5</span>
+                <span class="tech-tag">CSS3 Grid</span>
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">Bootstrap 5</span>
+                <span class="tech-tag">SQL</span>
+              </div>
+              <div class="project-actions">
+                <button onclick="openProjectModal('Modernware E-Commerce Platform', 'images/project2.png', 'E-Commerce', 'A sleek e-commerce shopping experience with instant category filters, dynamic cart drawer, responsive product cards, and dark/light UI styling.', ['HTML5', 'CSS3 Grid', 'JavaScript', 'Bootstrap 5', 'SQL'], '#', 'https://github.com')" class="btn btn-primary-custom">
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
+                </button>
+                <a href="https://github.com" target="_blank" class="btn btn-outline-custom">
+                  <i class="fa-brands fa-github"></i> GitHub Repo
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="col-lg-6 fade-in-up">
+          <div class="bg-glass project-card">
+            <div class="project-img-wrapper">
+              <img src="images/project3.png" alt="Nexus Ops DevOps Monitoring Hub">
+              <span class="project-badge">Cloud & DevOps</span>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Nexus Ops DevOps Monitoring Hub</h3>
+              <p class="project-desc">
+                Real-time server infrastructure telemetry hub showcasing network topology nodes, CPU memory usage graphs, and interactive terminal logging console.
+              </p>
+              <div class="tech-tags">
+                <span class="tech-tag">Java</span>
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">Docker</span>
+                <span class="tech-tag">Bootstrap 5</span>
+              </div>
+              <div class="project-actions">
+                <button onclick="openProjectModal('Nexus Ops DevOps Monitoring Hub', 'images/project3.png', 'Cloud & DevOps', 'Real-time server infrastructure telemetry hub showcasing network topology nodes, CPU memory usage graphs, and interactive terminal logging console.', ['Java', 'Python', 'JavaScript', 'Docker', 'Bootstrap 5'], '#', 'https://github.com')" class="btn btn-primary-custom">
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
+                </button>
+                <a href="https://github.com" target="_blank" class="btn btn-outline-custom">
+                  <i class="fa-brands fa-github"></i> GitHub Repo
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="col-lg-6 fade-in-up">
+          <div class="bg-glass project-card">
+            <div class="project-img-wrapper">
+              <img src="images/project4.png" alt="HubLink Creator & Social Platform">
+              <span class="project-badge">Web Application</span>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">HubLink Creator & Social Platform</h3>
+              <p class="project-desc">
+                A digital workspace application for online creators featuring media previews, activity feeds, project task trackers, and neon accents.
+              </p>
+              <div class="tech-tags">
+                <span class="tech-tag">HTML5</span>
+                <span class="tech-tag">CSS Flexbox</span>
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">Bootstrap 5</span>
+                <span class="tech-tag">JSON</span>
+              </div>
+              <div class="project-actions">
+                <button onclick="openProjectModal('HubLink Creator & Social Platform', 'images/project4.png', 'Web Application', 'A digital workspace application for online creators featuring media previews, activity feeds, project task trackers, and neon accents.', ['HTML5', 'CSS Flexbox', 'JavaScript', 'Bootstrap 5', 'JSON'], '#', 'https://github.com')" class="btn btn-primary-custom">
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
+                </button>
+                <a href="https://github.com" target="_blank" class="btn btn-outline-custom">
+                  <i class="fa-brands fa-github"></i> GitHub Repo
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       6. CONTACT SECTION
+  =========================================== -->
+  <section id="contact" class="section-padding" style="background: var(--bg-secondary);">
+    <div class="container">
+      <div class="text-center">
+        <span class="section-subtitle">Get In Touch</span>
+        <h2 class="section-title">Contact <span class="text-gradient">Me</span></h2>
+        <p class="section-desc">Have a project in mind, a job opportunity, or just want to connect? Send me a message and I'll get back to you promptly!</p>
+      </div>
+
+      <div class="row gy-4 mt-2">
+        <!-- Contact Information Column -->
+        <div class="col-lg-5 fade-in-up">
+          <div class="bg-glass contact-info-card">
+            <h3 class="h4 mb-4">Let's talk about everything!</h3>
+
+            <div class="contact-item">
+              <div class="contact-icon">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+                <i class="fa-solid fa-envelope d-none"></i>
+              </div>
+              <div class="contact-item-details">
+                <h6>Email Me</h6>
+                <p><a href="mailto:sairamakrishnathotakura18@gmail.com" class="text-decoration-none" style="color: inherit;">sairamakrishnathotakura18@gmail.com</a></p>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+                <i class="fa-solid fa-phone d-none"></i>
+              </div>
+              <div class="contact-item-details">
+                <h6>Call Me</h6>
+                <p>+919398217823</p>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                <i class="fa-solid fa-location-dot d-none"></i>
+              </div>
+              <div class="contact-item-details">
+                <h6>Location</h6>
+                <p>KAKINADA,AP,INDIA</p>
+              </div>
+            </div>
+
+            <hr style="border-color: var(--border-glass);" class="my-4">
+
+            <h6 class="text-muted text-uppercase mb-3" style="font-size: 0.8rem; letter-spacing: 1px;">Follow My Channels</h6>
+            <div class="social-links">
+              <a href="https://www.linkedin.com/in/sai-siva-mani-sri-rama-krishna-thotakura-a32951383?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" class="social-icon" aria-label="LinkedIn">
+                <svg class="social-svg" viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9v8.37H9.25V10.9H6.46M7.86 6.63a1.64 1.64 0 1 0 0 3.28 1.64 1.64 0 0 0 0-3.28z"/></svg>
+                <i class="fa-brands fa-linkedin-in d-none"></i>
+              </a>
+              <a href="https://github.com/sairamakrishnathotakura18-cloud" target="_blank" class="social-icon" aria-label="GitHub">
+                <svg class="social-svg" viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.1-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2z"/></svg>
+                <i class="fa-brands fa-github d-none"></i>
+              </a>
+              <a href="https://www.instagram.com/offx__sai_.18?igsh=MWFoczk1NmV2dGFjNA==" target="_blank" class="social-icon" aria-label="Instagram">
+                <svg class="social-svg" viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                <i class="fa-brands fa-instagram d-none"></i>
+              </a>
+              <a href="mailto:sairamakrishnathotakura18@gmail.com" class="social-icon" aria-label="Email">
+                <svg class="social-svg" viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+                <i class="fa-solid fa-envelope d-none"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact Form Column -->
+        <div class="col-lg-7 fade-in-up">
+          <div class="bg-glass contact-form-card">
+            <h3 class="h4 mb-4">Send a Message</h3>
+            
+            <form id="contactForm">
+              <div class="row g-3">
+                <div class="col-md-6 form-group">
+                  <label for="contactName" class="form-label">Your Name <span class="text-danger">*</span></label>
+                  <input type="text" id="contactName" class="form-control-custom" placeholder="" required>
+                </div>
+
+                <div class="col-md-6 form-group">
+                  <label for="contactEmail" class="form-label">Your Email <span class="text-danger">*</span></label>
+                  <input type="email" id="contactEmail" class="form-control-custom" placeholder="" required>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="contactSubject" class="form-label">Subject <span class="text-danger">*</span></label>
+                <input type="text" id="contactSubject" class="form-control-custom" placeholder="" required>
+              </div>
+
+              <div class="form-group">
+                <label for="contactMessage" class="form-label">Message <span class="text-danger">*</span></label>
+                <textarea id="contactMessage" rows="5" class="form-control-custom" placeholder="" required></textarea>
+              </div>
+
+              <button type="submit" class="btn-primary-custom w-100 justify-content-center mt-2">
+                <i class="fa-solid fa-paper-plane me-2"></i> Send Message
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       7. FOOTER
+  =========================================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <a class="navbar-brand me-0" href="#home">
+          <div class="brand-icon">
+            <i class="fa-solid fa-code"></i>
+          </div>
+          <span>SRK<span class="text-gradient">The Developer</span></span>
+        </a>
+
+        <div class="d-flex flex-wrap justify-content-center gap-4 my-2">
+          <a href="#home" class="text-decoration-none text-muted">Home</a>
+          <a href="#about" class="text-decoration-none text-muted">About</a>
+          <a href="#skills" class="text-decoration-none text-muted">Skills</a>
+          <a href="#projects" class="text-decoration-none text-muted">Projects</a>
+          <a href="#contact" class="text-decoration-none text-muted">Contact</a>
+        </div>
+
+        <p class="small text-muted text-center mb-0">
+          &copy; 2026 SRK. Built with <i class="fa-solid fa-heart text-danger"></i>, HTML5, CSS3 & Bootstrap 5.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Back to Top Button -->
+  <button id="backToTopBtn" class="back-to-top-btn" aria-label="Back to top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <!-- ==========================================
+       8. MODALS
+  =========================================== -->
+
+  <!-- Online Resume Modal -->
+  <div class="modal fade" id="resumeModal" tabindex="-1" aria-labelledby="resumeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="resumeModalLabel"><i class="fa-solid fa-file-lines text-gradient me-2"></i> Sairamakrishna - Curriculum Vitae</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="p-3 bg-glass rounded-4 mb-4">
+            <div class="d-flex justify-content-between align-items-center flex-wrap gap-2">
+              <div>
+                <h4 class="mb-1 text-heading fw-bold">SAI</h4>
+                <p class="text-muted small mb-0">Full-Stack Engineer & UI Architect | KAKINADA,AP, INDIA</p>
+              </div>
+              <button onclick="triggerResumeDownload()" class="btn-primary-custom btn-sm">
+                <i class="fa-solid fa-download me-1"></i> Download PDF/TXTS
+              </button>
+            </div>
+          </div>
+
+          <h6 class="text-gradient fw-bold mb-2">SUMMARY</h6>
+          <p class="small text-muted mb-4">
+           Passionate Full-Stack Developer, Python Developer, and Data Analyst focused on building scalable web applications, responsive user interfaces, and efficient backend solutions. Dedicated to writing clean, maintainable code and leveraging data-driven insights to solve real-world problems.
+          </p>
+
+          <h6 class="text-gradient fw-bold mb-2">KEY SKILLS</h6>
+          <div class="d-flex flex-wrap gap-2 mb-4">
+            <span class="tech-tag">HTML5 / CSS3</span>
+            <span class="tech-tag">JavaScript (ES6+)</span>
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">Java</span>
+            <span class="tech-tag">C++</span>
+            <span class="tech-tag">SQL</span>.
+          </div>
+
+          <h6 class="text-gradient fw-bold mb-2">STUDENT</h6>
+          <div class="border-start border-2 ps-3 mb-4" style="border-color: var(--primary-accent) !important;">
+            <div class="fw-bold">Lead Full-Stack || Python</div>
+            <div class="small text-muted mb-2">2025 - Present</div>
+            <ul class="small text-muted ps-3 mb-0">
+              <li>Architected telemetry and AI analytics web app dashboards.</li>
+              <li>Improved client side render speeds by 42% through responsive asset pipeline.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Project Details Modal -->
+  <div class="modal fade" id="projectDetailModal" tabindex="-1" aria-labelledby="projectModalTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="projectModalTitle">Project Details</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img id="projectModalImg" src="" class="img-fluid rounded-4 mb-4 w-100" style="max-height: 350px; object-fit: cover;" alt="Project Detail">
+          <span id="projectModalCategory" class="badge bg-primary mb-2">Category</span>
+          <p id="projectModalDesc" class="text-muted mb-4"></p>
+          
+          <h6 class="fw-bold text-heading mb-2">Technologies Used:</h6>
+          <div id="projectModalTech" class="d-flex flex-wrap gap-2 mb-4"></div>
+
+          <div class="d-flex gap-3">
+            <button id="projectModalDemoBtn" class="btn-primary-custom flex-grow-1 justify-content-center">
+              <i class="fa-solid fa-arrow-up-right-from-square"></i> Open Live Project
+            </button>
+            <button id="projectModalGithubBtn" class="btn-outline-custom flex-grow-1 justify-content-center">
+              <i class="fa-brands fa-github"></i> Source Code
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap 5 JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Custom JS -->
+  <script src="js/script.js"></script>
+</body>
+</html>
